@@ -18,12 +18,12 @@ const CODE = {
 module.exports = {
   /**
    * 分页结构封装
-   * @param {number} paegNum
+   * @param {number} pageNum
    * @param {number} pageSize
    * @returns
    */
-  pager({ paegNum = 1, pageSize = 10 }) {
-    paegNum = paegNum * 1;
+  pager({ pageNum = 1, pageSize = 10 }) {
+    pageNum = pageNum * 1;
     pageSize = pageSize * 1;
     const skipIndex = (pageNum - 1) * pageSize;
     return {
@@ -49,5 +49,6 @@ module.exports = {
       data,
       msg
     };
-  }
+  },
+  CODE
 };
